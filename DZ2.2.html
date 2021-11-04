@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS2</title>
+    <style>
+
+        li {
+            padding: 1% 2% 1% 6%;
+            list-style-image: url("/icons/unchecked_16.png");
+        }
+
+        li:nth-child(odd) {
+            background: aqua;
+        }
+
+        .check {
+            list-style-image: url("/icons/checked_16.png");
+            background: gray !important;
+        }
+
+        li:nth-child(even) {
+            background: deepskyblue;
+        }
+
+        span {
+            text-decoration: none;
+        }
+
+        li:after {
+            content: " ×";
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<b>My To Do List</b><br><br>
+<li><s>Hit the gym</s></li>
+<li class="check"><s>Pay bills</s></li>
+<li><s>Meet John</s></li>
+<li><s>Buy eggs</s></li>
+<li class="check"><s>Read a book</s></li>
+<li><s>Organize office</s></li>
+<li><s>Eat dinner</s></li>
+<li><s>Buy apples</s></li>
+<li><s>Meet George</s></li>
+<li><s>Feed the cat</s></li>
+<li class="check"><s>Write a letter</s></li>
+<li><s>Run 1 km</s></li>
+
+</body>
+</html>
